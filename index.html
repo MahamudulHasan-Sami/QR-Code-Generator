@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Toggler</title>
+    
+    <!-- tailwind + daizy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-[#fae4ba]  flex justify-center items-center h-[100vh]">
+    <div id="qr-container" class="bg-white drop-shadow-xl rounded-md w-[380px] md:w-[460px] p-10 space-y-4">
+        <h1 class="text-2xl font-semibold text-cente text-center">QR Code Generator</h1>
+        <input type="text" placeholder="Paste your url here" id="qr-input" class="rounded-md p-1 border-2 border-gray-700 block w-full">
+        <button id="generate-btn" class="btn bg-[#2ecc71] text-white rounded-md block w-full">Click Here to Generate QR Code</button>
+        <img src="" alt="" id="qr-code-img" class="mx-auto">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
